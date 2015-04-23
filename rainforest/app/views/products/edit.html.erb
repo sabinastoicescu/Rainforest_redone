@@ -1,0 +1,21 @@
+<h1>Edit Product</h1>
+
+<p><%=link_to "Back to Products", products_url %></p>
+
+<%= form_for @product do |p|%>
+<p>
+<%= p.label :name %><br>
+<%= p.text_field :name %>
+<p>
+</p>
+<%= p.label :description %><br>
+<%= p.text_field :description %>
+</p>
+<p>
+<%= p.label :price_in_cents %><br>
+<%= p.text_field :price_in_cents%>
+</p>
+<p>
+<%= p.submit %>
+</p>
+<% end %>
